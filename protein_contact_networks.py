@@ -65,7 +65,6 @@ def PCN_fun(pdb_file, chain,dir=os.getcwd() , cut_off=7.00, atom='CA', residue_n
             print(f"Please check the {pdb_file} has the chain id-> '{chain}' is available or not")
 
     except Exception as e: 
-        print(e)
         print(f"Entry is invalid")
         print(f"please check the PDB id: '{pdb_file}' at https://www.rcsb.org/")
 
