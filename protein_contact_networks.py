@@ -4,7 +4,6 @@ from biopandas.pdb import PandasPdb
 from scipy.spatial import distance
 import networkx as nx
 
-
 def pdb_retrive(pdb_id):
     """Function returns the pdb file as a Pandas Dataframe.
 
@@ -16,10 +15,9 @@ def pdb_retrive(pdb_id):
         ppdb = PandasPdb().fetch_pdb(pdb_id)
     return ppdb
 
-
 def PCN_fun(pdb_file, chain,dir=os.getcwd() , cut_off=7.00, atom='CA', residue_no_diff=0 ):
     """Function used to calculate the protein contact networks. 
-    
+
     parameters:
         pdb_file: pdb_file of the protein. it only accept .pdb format
                   pass the of the file.
